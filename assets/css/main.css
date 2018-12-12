@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0 auto;
+}
+
+main {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+#topPart {
+  width: 70%;
+  margin: 0 auto;
+  border: solid 10px  #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #717171;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+#topPart .leftColumn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#topPart .leftColumn #question {
+  width: 50%;
+  margin: 0 auto;
+  border: solid 8px black;
+  background-color: white;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#topPart .rightColumn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#topPart .rightColumn .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin: 3% auto;
+  border-radius: 50%;
+  border: solid 8px black;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#topPart .rightColumn .numbers img {
+  width: 85%;
+}
+
+#bottomPart {
+  width: 70%;
+  height: 250px;
+  margin: 0 auto;
+  border: solid 10px  #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #717171;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  -webkit-transform: rotateX(25deg);
+          transform: rotateX(25deg);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+#bottomPart .leftColumn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bottomPart .leftColumn #numbTable {
+  width: 55%;
+  height: 70%;
+  margin: 2% auto 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#bottomPart .leftColumn #numbTable .digits {
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border: solid 1px gray;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+#bottomPart .leftColumn #bigButton {
+  width: 55%;
+  height: 27%;
+  margin: 0 auto 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bottomPart .leftColumn #bigButton #bigRedButton {
+  width: 45%;
+  height: 90%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ff3535;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23881b1b' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-box-shadow: 2px 7px #881b1b;
+          box-shadow: 2px 7px #881b1b;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#bottomPart .leftColumn #bigButton #bigRedButton:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: 0px 1px #881b1b;
+          box-shadow: 0px 1px #881b1b;
+}
+
+#bottomPart .leftColumn #bigButton #bigBulb {
+  width: 45%;
+}
+
+#bottomPart .leftColumn #bigButton #bigBulb img {
+  width: 40%;
+}
+
+#bottomPart .rightColumn {
+  width: 50%;
+}
+
+#bottomPart .rightColumn #bulbs {
+  width: 90%;
+  height: 20%;
+  margin: 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bottomPart .rightColumn #bulbs .smallBulb {
+  width: 10%;
+}
+
+#bottomPart .rightColumn #smallButtons {
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bottomPart .rightColumn #smallButtons .smallBulbButtons {
+  width: 10%;
+  height: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ff3535;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23881b1b' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-box-shadow: 2px 4px #881b1b;
+          box-shadow: 2px 4px #881b1b;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#bottomPart .rightColumn #smallButtons .smallBulbButtons:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: 0px 1px #881b1b;
+          box-shadow: 0px 1px #881b1b;
+}
+
+#bottomPart .rightColumn #nineSmallButtons {
+  width: 30%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 25% 0 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#bottomPart .rightColumn #nineSmallButtons .botSmallBulbButtons {
+  width: 28%;
+  height: 28%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ff3535;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23881b1b' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-box-shadow: 2px 4px #881b1b;
+          box-shadow: 2px 4px #881b1b;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#bottomPart .rightColumn #nineSmallButtons .botSmallBulbButtons:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: 0px 1px #881b1b;
+          box-shadow: 0px 1px #881b1b;
+}
+
+.activeButton {
+  background-color: #881b1b !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23843d3d' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+.activeDigit {
+  background-color: gray !important;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
