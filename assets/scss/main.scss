@@ -1,7 +1,10 @@
 @import 'reset';
 
-main{
+
+main {
     perspective: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #topPart {
@@ -50,7 +53,7 @@ main{
 
 #bottomPart {
     width: 70%;
-    height: 250px;
+    height: auto;
     margin: 0 auto;
     border: solid 10px  #808080;
     display: flex;
@@ -102,9 +105,9 @@ main{
                 }
             }
             #bigBulb{
-                width: 45%;
+                width: 35px;
                 img {
-                    width: 40%;
+                    width: 90%;
                 }
             }
 
@@ -117,7 +120,7 @@ main{
         #bulbs {
             width: 90%;
             height: 20%;
-            margin: 3% 0;
+            margin: 4% 0;
             display: flex;
             justify-content: space-between;
             .smallBulb {

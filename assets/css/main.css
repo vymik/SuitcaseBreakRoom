@@ -18,6 +18,8 @@ body {
 main {
   -webkit-perspective: 500px;
           perspective: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #topPart {
@@ -90,7 +92,7 @@ main {
 
 #bottomPart {
   width: 70%;
-  height: 250px;
+  height: auto;
   margin: 0 auto;
   border: solid 10px  #808080;
   display: -webkit-box;
@@ -172,11 +174,11 @@ main {
 }
 
 #bottomPart .leftColumn #bigButton #bigBulb {
-  width: 45%;
+  width: 35px;
 }
 
 #bottomPart .leftColumn #bigButton #bigBulb img {
-  width: 40%;
+  width: 90%;
 }
 
 #bottomPart .rightColumn {
@@ -186,7 +188,7 @@ main {
 #bottomPart .rightColumn #bulbs {
   width: 90%;
   height: 20%;
-  margin: 3% 0;
+  margin: 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
